@@ -2,6 +2,8 @@
 
 A simple RESTful API built with **Laravel 11** for managing student records.
 
+---
+
 ## 📹 Demo Video
 
 [Click here to watch the Postman demo](YOUR_VIDEO_LINK_HERE)
@@ -19,13 +21,11 @@ A simple RESTful API built with **Laravel 11** for managing student records.
 
 ## Setup
 
-```bash
-composer install
-cp .env.example .env
-php artisan key:generate
-php artisan migrate
-php artisan serve
-```
+1. Install dependencies — `composer install`
+2. Copy environment file — `cp .env.example .env`
+3. Generate app key — `php artisan key:generate`
+4. Run migrations — `php artisan migrate`
+5. Start the server — `php artisan serve`
 
 Server runs at `http://127.0.0.1:8000`
 
@@ -49,43 +49,37 @@ Base URL: `http://127.0.0.1:8000/api`
 
 ## Request Body
 
-For `POST` and `PUT`, all fields are required:
+**POST and PUT** — all fields required
 
-```json
-{
-    "name": "Alice Reyes",
-    "email": "alice@example.com",
-    "course": "Computer Science"
-}
-```
+    {
+        "name": "Alice Reyes",
+        "email": "alice@example.com",
+        "course": "Computer Science"
+    }
 
-For `PATCH`, only send the fields you want to update:
+**PATCH** — only send the fields you want to update
 
-```json
-{
-    "course": "Data Science"
-}
-```
+    {
+        "course": "Data Science"
+    }
 
 ---
 
 ## Sample Responses
 
-**POST /api/students** — `201 Created`
-```json
-{
-    "id": 1,
-    "name": "Alice Reyes",
-    "email": "alice@example.com",
-    "course": "Computer Science",
-    "created_at": "2026-05-29T00:00:00.000000Z",
-    "updated_at": "2026-05-29T00:00:00.000000Z"
-}
-```
+**POST /api/students** — 201 Created
 
-**GET /api/students/{id}** — `404 Not Found`
-```json
-{
-    "message": "Student not found!"
-}
-```
+    {
+        "id": 1,
+        "name": "Alice Reyes",
+        "email": "alice@example.com",
+        "course": "Computer Science",
+        "created_at": "2026-05-29T00:00:00.000000Z",
+        "updated_at": "2026-05-29T00:00:00.000000Z"
+    }
+
+**GET /api/students/{id}** — 404 Not Found
+
+    {
+        "message": "Student not found!"
+    }
