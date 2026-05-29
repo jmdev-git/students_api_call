@@ -8,6 +8,10 @@ This project demonstrates a RESTful API built with Laravel 11 that handles stude
 
 ---
 
+## Screen Recording Demonstration
+
+[View Demo Here]: https://github.com/user-attachments/assets/6c23f246-8bfc-4d64-a315-01789386da8a
+
 ## How to Run
 
 1. Open the project folder in VS Code
@@ -30,9 +34,3 @@ This project demonstrates a RESTful API built with Laravel 11 that handles stude
 | PATCH | `/api/students/{id}` | Update specific fields only |
 | DELETE | `/api/students/{id}` | Remove a specific student |
 | DELETE | `/api/students` | Remove all students |
-
----
-
-## Screen Recording Demonstration
-
-[View Demo Here](YOUR_VIDEO_LINK_HERE)
