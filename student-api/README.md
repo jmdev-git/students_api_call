@@ -1,85 +1,38 @@
 # Student API
 
-A simple RESTful API built with **Laravel 11** for managing student records.
+Name: GRADO, MARY
+
+Project Title: API-CALL
+
+This project demonstrates a RESTful API built with Laravel 11 that handles student record management. It supports full CRUD operations through structured API endpoints and returns JSON responses. All endpoints were tested and verified using Postman.
 
 ---
 
-## 📹 Demo Video
+## How to Run
 
-[Click here to watch the Postman demo](YOUR_VIDEO_LINK_HERE)
-
----
-
-## Tech Stack
-
-- PHP 8.2
-- Laravel 11
-- SQLite
-- Postman (for testing)
+1. Open the project folder in VS Code
+2. Open the terminal and run: `php artisan serve`
+3. Launch Postman for API testing
+4. Test the following HTTP methods: GET, POST, PUT, PATCH, DELETE
+5. Use the base endpoint: `http://127.0.0.1:8000/api/students`
+6. Check the JSON responses returned from the database
 
 ---
 
-## Setup
-
-1. Install dependencies — `composer install`
-2. Copy environment file — `cp .env.example .env`
-3. Generate app key — `php artisan key:generate`
-4. Run migrations — `php artisan migrate`
-5. Start the server — `php artisan serve`
-
-Server runs at `http://127.0.0.1:8000`
-
----
-
-## API Endpoints
-
-Base URL: `http://127.0.0.1:8000/api`
+## Endpoints Overview
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/students` | Get all students |
-| GET | `/students/{id}` | Get a single student |
-| POST | `/students` | Create a new student |
-| PUT | `/students/{id}` | Full update of a student |
-| PATCH | `/students/{id}` | Partial update of a student |
-| DELETE | `/students/{id}` | Delete a student |
-| DELETE | `/students` | Delete all students |
+| GET | `/api/students` | Retrieve all students |
+| GET | `/api/students/{id}` | Retrieve a specific student |
+| POST | `/api/students` | Add a new student |
+| PUT | `/api/students/{id}` | Replace all fields of a student |
+| PATCH | `/api/students/{id}` | Update specific fields only |
+| DELETE | `/api/students/{id}` | Remove a specific student |
+| DELETE | `/api/students` | Remove all students |
 
 ---
 
-## Request Body
+## Screen Recording Demonstration
 
-**POST and PUT** — all fields required
-
-    {
-        "name": "Alice Reyes",
-        "email": "alice@example.com",
-        "course": "Computer Science"
-    }
-
-**PATCH** — only send the fields you want to update
-
-    {
-        "course": "Data Science"
-    }
-
----
-
-## Sample Responses
-
-**POST /api/students** — 201 Created
-
-    {
-        "id": 1,
-        "name": "Alice Reyes",
-        "email": "alice@example.com",
-        "course": "Computer Science",
-        "created_at": "2026-05-29T00:00:00.000000Z",
-        "updated_at": "2026-05-29T00:00:00.000000Z"
-    }
-
-**GET /api/students/{id}** — 404 Not Found
-
-    {
-        "message": "Student not found!"
-    }
+[View Demo Here](YOUR_VIDEO_LINK_HERE)
