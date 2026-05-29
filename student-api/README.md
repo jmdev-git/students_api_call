@@ -7,6 +7,12 @@ Project Title: API-CALL
 This project demonstrates a RESTful API built with Laravel 11 that handles student record management. It supports full CRUD operations through structured API endpoints and returns JSON responses. All endpoints were tested and verified using Postman.
 
 ---
+## Screen Recording Demonstration
+
+[View Demo Here]: https://github.com/user-attachments/assets/33b51e78-79b1-4b48-b4ef-6de6827293be
+
+https://github.com/user-attachments/assets/8c41c3e8-c7d9-40fa-b815-3aed5c94da39
+
 
 ## How to Run
 
@@ -30,9 +36,3 @@ This project demonstrates a RESTful API built with Laravel 11 that handles stude
 | PATCH | `/api/students/{id}` | Update specific fields only |
 | DELETE | `/api/students/{id}` | Remove a specific student |
 | DELETE | `/api/students` | Remove all students |
-
----
-
-## Screen Recording Demonstration
-
-[View Demo Here](YOUR_VIDEO_LINK_HERE)
